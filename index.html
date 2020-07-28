@@ -4,11 +4,15 @@
     <meta charset="utf-8">
     <title>Chrome Favicon Test</title>
     <link rel="icon" type="image/svg+xml" href="./favicon.svg">
-    <link rel="icon" type="image/png" href="./favicon.png">
+    <link rel="icon" type="image/png" href="./favicon32x32.png">
   </head>
   <body>
-    <h1>In this example, PNG favicon takes precedence (might need to explicitly refresh page).</h1>
-    <h2>Rust logo should appear as favicon.</h2>
-    <a href="./page.html">See this page for SVG favicon</a>
+    <h1>In this example, SVG and PNG (32px x 32px) favicons are listed in &lt;head&gt; respectively.</h1>
+    <h1>PNG takes precedence because it was placed last (might need to explicitly refresh page).</h1>
+    <h2>Note: Chrome logo (PNG) should appear as favicon.</h2>
+    <a style="display: block; margin-bottom: 5px;" href="./index.html">Example: (this page) SVG and PNG (32x32) listed respectively</a>
+    <a style="display: block; margin-bottom: 5px;" href="./png32x32-svg.html">Example: PNG (32x32) and SVG listed respectively</a>
+    <a style="display: block; margin-bottom: 5px;" href="./svg-png16x16.html">Example: SVG and PNG (16x16) listed respectively</a>
+    <a style="display: block; margin-bottom: 5px;" href="./svg-png196x196.html">Example: SVG and PNG (196x196) listed respectively</a>
 	</body>
 </html>
